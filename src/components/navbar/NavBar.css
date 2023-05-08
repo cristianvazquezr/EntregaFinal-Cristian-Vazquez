@@ -14,7 +14,7 @@
   header {
     display: flex;
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 90vw;
     gap: 15%;
     flex-direction: row;
     position: sticky;
@@ -30,7 +30,15 @@
   
   .logo-encabezado {
     display: flex;
-    justify-content: flex-end;
+  }
+  .logo{
+    width: 100px;
+    aspect-ratio: 3.8/3.3;
+  }
+
+  .logo-MH{
+    width: 50px;
+    aspect-ratio: 3.8/3.3;
   }
   
   .barra_navegacion {
@@ -70,7 +78,7 @@
     align-items: center;
     align-items: flex-start;
   }
-  .links_iconos a i {
+  .links_iconos a{
     color: rgb(51, 34, 7);
     font-size: x-large;
 
@@ -85,3 +93,29 @@
   .input-busqueda {
     width: auto;
   }
+
+  .carritoVentas{
+    font-size: small;
+    position: relative;
+    bottom: 12px;
+    right: 10%;
+  }
+
+  .menuHamburguesa{
+    display: none;
+    background-color: white;
+  }
+  
+
+@media screen and (max-width: 993px) {
+  .menuHamburguesa{
+    display: block;
+  }
+  .encabezado{
+    display: none;
+  }
+}
+.CardWidget-MH{
+  display: flex;
+  align-items: center;
+}

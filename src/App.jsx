@@ -5,8 +5,8 @@ import ItemList from './components/itemListContainer/itemListCont'
 function App() {
   return (
 
-    <div Class="contendor_principal">
-      <Navbar></Navbar>
+    <div ClassName="contendor_principal">
+      <Navbar><hr /></Navbar>
       <ItemList saludo='PROXIMAMENTE'></ItemList>
     </div>
   
