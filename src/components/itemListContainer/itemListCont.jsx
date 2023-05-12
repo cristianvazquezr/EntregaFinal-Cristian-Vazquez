@@ -1,8 +1,18 @@
 import './itemListCont.css'
-function ItemList(props){
+import CardItem from './cardItem'
+import comidas from '../../../data/productos'
+function ItemList(){
     return(
         <div className="itemListCont">
-            <h1>{props.saludo}</h1>
+
+            {comidas.map((items)=>{<CardItem
+                key={items.id}
+                productTitle={items.nombre}
+                ProductDescription={items.descripcion}
+                stock={items.cantidad}
+                imageLink={items.imagen}
+            />})
+            }      
         </div>
     )
 }

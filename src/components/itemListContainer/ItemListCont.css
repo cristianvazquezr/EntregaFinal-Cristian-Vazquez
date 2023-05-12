@@ -5,3 +5,7 @@
     height: 80vh;
 
 }
+
+.cardItem{
+    display: flex;
+}
