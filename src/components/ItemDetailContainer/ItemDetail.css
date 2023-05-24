@@ -1,0 +1,9 @@
+.imagenDetail{
+    height: 100%;
+    aspect-ratio: 3/4;
+}
+
+.cardDetail{
+    max-width: 700px;
+    align-content: center;
+}

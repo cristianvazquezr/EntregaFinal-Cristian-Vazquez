@@ -1,19 +1,22 @@
 import './App.css'
 import Navbar from './components/navbar/Navbar'
-import ItemList from './components/itemListContainer/itemListCont'
-import comidas from '../../vite-app/data/productos'
+import ItemListCont from './components/itemListContainer/itemListCont'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 function App() {
-  let productos=comidas
-
-  console.log(productos)
-
   return (
-
-    <div className="contendor_principal">
-      <Navbar></Navbar>
-      <ItemList></ItemList>
-    </div>
+    <BrowserRouter>
+      <div className="contendor_principal">
+      <Navbar cantidadCarrito={0}></Navbar>
+        <Routes>
+          <Route path="/" element={<ItemListCont/>}/>
+          <Route path="/product/:id" element={<ItemDetailContainer/>}/>
+          <Route path="*" element={<h4>Error 404: Page not found</h4>}/>
+          <Route path="/category/:categoria" element={<ItemListCont/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
    
   )
 }

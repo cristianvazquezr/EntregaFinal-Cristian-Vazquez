@@ -5,7 +5,7 @@ const comidas = [
     categoria: "Carnes",
     origen: "Argentina",
     descripcion: "Pollo asado al horno con papas y hierbas",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random1",
     precio: 200,
     cantidad: 10
   },
@@ -15,7 +15,7 @@ const comidas = [
     categoria: "Pastas",
     origen: "Italia",
     descripcion: "Ravioles rellenos de espinaca y ricota con salsa de tomate",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random2",
     precio: 150,
     cantidad: 8
   },
@@ -25,7 +25,7 @@ const comidas = [
     categoria: "Vegetariano",
     origen: "Estados Unidos",
     descripcion: "Ensalada con lechuga, pollo grillado, croutones y aderezo César",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random3",
     precio: 120,
     cantidad: 15
   },
@@ -35,7 +35,7 @@ const comidas = [
     categoria: "Comida rapida",
     origen: "Estados Unidos",
     descripcion: "Hamburguesa con carne, queso, lechuga, tomate y cebolla",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random4",
     precio: 100,
     cantidad: 20
   },
@@ -45,17 +45,17 @@ const comidas = [
     categoria: "Vegetariano",
     origen: "Argentina",
     descripcion: "Milanesa de soja con guarnición de ensalada",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random5",
     precio: 180,
     cantidad: 12
   },
   {
     id: 6,
-    nombre: "Pizza Margherita",
+    nombre: "Pizza Especial",
     categoria: "Comida rapida",
     origen: "Italia",
-    descripcion: "Pizza con salsa de tomate, mozzarella y albahaca",
-    imagen: "https://picsum.photos/200/300",
+    descripcion: "Pizza con salsa de tomate, mozzarella, jamon y huevo",
+    imagen: "https://picsum.photos/1000/1000?random6",
     precio: 220,
     cantidad: 7
   },
@@ -65,7 +65,7 @@ const comidas = [
     categoria: "Comida rápida",
     origen: "EE.UU",
     descripcion: "Una hamburguesa de carne vacuna con queso cheddar, lechuga, tomate y salsa especial",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random7",
     precio: 8.5,
     cantidad: 15
   },
@@ -75,7 +75,7 @@ const comidas = [
     categoria: "Pastas",
     origen: "Italia",
     descripcion: "Tallarines con una salsa de tomate, carne picada y verduras",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random8",
     precio: 10.5,
     cantidad: 20
   },
@@ -85,7 +85,7 @@ const comidas = [
     categoria: "Carnes",
     origen: "Perú",
     descripcion: "Plato peruano que consiste en carne de res salteada con cebolla, tomate, ají y papas fritas",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random9",
     precio: 14.5,
     cantidad: 10
   },
@@ -95,7 +95,7 @@ const comidas = [
     categoria: "Comida rápida",
     origen: "Italia",
     descripcion: "Pizza con salsa de tomate, mozzarella fresca y albahaca",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random10",
     precio: 11.5,
     cantidad: 18
   },
@@ -105,7 +105,7 @@ const comidas = [
     categoria: "Vegetariano",
     origen: "México",
     descripcion: "Ensalada de lechuga romana, pollo a la parrilla, crutones, queso parmesano y aderezo César",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random11",
     precio: 9.5,
     cantidad: 12
   },
@@ -115,7 +115,7 @@ const comidas = [
     categoria: "Vegetariano",
     origen: "Italia",
     descripcion: "Lasagna de verduras con salsa de tomate, berenjena, zucchini, champiñones y queso ricotta",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random12",
     precio: 12.5,
     cantidad: 10
   },
@@ -125,7 +125,7 @@ const comidas = [
     categoria: "Carnes",
     origen: "Argentina",
     descripcion: "Milanesa de carne empanada con salsa de tomate, jamón cocido, queso y orégano.",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random13",
     precio: 350,
     cantidad: 20
   },
@@ -135,7 +135,7 @@ const comidas = [
     categoria: "Pastas",
     origen: "Italia",
     descripcion: "Pasta larga con salsa a base de huevo, panceta, queso pecorino y pimienta negra.",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random14",
     precio: 280,
     cantidad: 15
   },
@@ -145,7 +145,7 @@ const comidas = [
     categoria: "Comida rapida",
     origen: "Estados Unidos",
     descripcion: "Pan con carne de vaca, lechuga, tomate, cebolla, queso y salsa.",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random15",
     precio: 200,
     cantidad: 30
   },
@@ -155,7 +155,7 @@ const comidas = [
     categoria: "Vegetariano",
     origen: "México",
     descripcion: "Ensalada con lechuga, pollo a la plancha, queso parmesano, crutones y aderezo César.",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random16",
     precio: 180,
     cantidad: 10
   },
@@ -165,7 +165,7 @@ const comidas = [
     categoria: "Pastas",
     origen: "Italia",
     descripcion: "Masa rellena de espinaca y ricotta, servida con salsa de tomate.",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random17",
     precio: 320,
     cantidad: 12
   },
@@ -175,7 +175,7 @@ const comidas = [
     categoria: "Vegetariano",
     origen: "México",
     descripcion: "Tortillas de maíz rellenas de verduras salteadas y acompañadas de guacamole.",
-    imagen: "https://picsum.photos/200/300",
+    imagen: "https://picsum.photos/1000/1000?random18",
     precio: 250,
     cantidad: 18
   }

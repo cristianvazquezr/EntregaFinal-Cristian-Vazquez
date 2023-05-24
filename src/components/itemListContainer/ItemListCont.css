@@ -1,11 +1,28 @@
 .itemListCont{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 80vh;
+
+}
+.imagenProd{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.botonCarrito{
+    background-color: rgba(240, 240, 240, 0.852);
 
 }
 
-.cardItem{
-    display: flex;
+.tarjetas{
+    padding: 8px;
+    text-decoration: none;
+}
+
+.descrip{
+    height: 4rem;
+}
+.hover-zoom{
+    transition: transform .5s; 
+}
+.hover-zoom:hover {
+    transform: scale(1.07);
+    z-index: 100; 
 }

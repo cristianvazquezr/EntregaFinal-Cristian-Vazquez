@@ -1,15 +1,17 @@
 import Cart from '../icons/Cart';
 import User from '../icons/User';
-import Search from '../icons/Serach';
+import { Link } from 'react-router-dom';
+
+
 function CartWidgetMenu(props){
     return (
         <div className={props.className}>
-            <a href="#"><User/></a>
-            <a className={props.className_Cart} href="#"><Cart/>
+            <Link to="#"><User/></Link>
+            <Link className={props.className_Cart} to="#"><Cart/>
                 <span className="carritoVentas badge rounded-pill bg-danger">
-                    5
+                    {props.valorCarrito}
                 </span>
-            </a>
+            </Link>
         </div>
     )
 }

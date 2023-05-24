@@ -1,20 +1,23 @@
 import ButtonList from "./buttonList"
-function CardItem(){
+import { Link } from "react-router-dom"
+
+function CardItem({nombre,cantidad,imagen,precio,id}){
     return(
         <>
-            <div className="col-4 cardItem">
-                <div className="card h-100">
-                <img src="..." className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <ButtonList></ButtonList>
+        <div className="col-lg-3 col-md-4 col-sm-6 tarjetas" >
+                <div className="card h-100 hover-zoom">
+                    <Link to={`/product/${id}`} >
+                        <img src={imagen} className="card-img-top imagenProd" alt="..."/>
+                    </Link>
+                    <div className="card-body">
+                        <h5 className="card-title">{nombre} ${precio}</h5>
+                        <ButtonList stock={cantidad}></ButtonList>
+                    </div>
+                    <div className="card-footer">
+                        <small className="text-muted">Quedan solo {cantidad} unidades!</small>
+                    </div>
                 </div>
-                <div className="card-footer">
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
-                </div>
-            </div>
+        </div>  
         </>
     )
 
