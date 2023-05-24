@@ -77,10 +77,10 @@ function Navbar({cantidadCarrito}){
                                 Productos
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><Link className="dropdown-item" to="#">Carnes</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Vegetales</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Pastas</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Panificacion</Link></li>
+                                    <li><Link className="dropdown-item" to="/category/Carnes">Carnes</Link></li>
+                                    <li><Link className="dropdown-item" to="/category/Vegetariano">Vegetariano</Link></li>
+                                    <li><Link className="dropdown-item" to="/category/Pastas">Pastas</Link></li>
+                                    <li><Link className="dropdown-item" to="/category/Comida rapida">Comida rápida</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
