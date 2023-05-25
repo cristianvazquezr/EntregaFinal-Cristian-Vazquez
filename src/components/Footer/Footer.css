@@ -1,0 +1,47 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 102;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    
+}
+.contenedorFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.iconosRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-bottom: 1.5vh;
+}
+
+.iconosRedes a{
+    font-size: x-large;
+    color: #1e1d18;
+}
+.logoFooter{
+    width: 100px;
+    aspect-ratio: 3.8/3.
+
+}
+.marca{
+    font-family: 'Parisienne', cursive;
+    margin: 0;
+    font-size: xx-large;
+}
+.descripcionFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+.copyRight{
+    font-size: small;
+}

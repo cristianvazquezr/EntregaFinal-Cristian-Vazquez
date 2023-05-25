@@ -3,6 +3,7 @@ import comidas from '../../../data/productos'
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+
 function getData(id){
     let promesa=new Promise((resolve, reject) => {
         setTimeout(() => {

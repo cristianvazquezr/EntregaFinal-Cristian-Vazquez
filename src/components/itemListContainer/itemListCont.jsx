@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 
+
 function getData(){
     let promesa=new Promise((resolve, reject) => {
         setTimeout(() => {

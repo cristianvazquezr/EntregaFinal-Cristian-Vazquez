@@ -1,5 +1,6 @@
 import { useState } from "react"
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 function ButtonList({stock}){
 
@@ -14,7 +15,6 @@ function ButtonList({stock}){
             cantidadCompra+=1
             setCantidadCompra(cantidadCompra)
         }
-        console.log(cantidadCompra)
     }
     function disminuirCantidad(){
         if (cantidadCompra<=1){
@@ -25,8 +25,12 @@ function ButtonList({stock}){
             cantidadCompra-=1
             setCantidadCompra(cantidadCompra)
         }
-        console.log(cantidadCompra)
+
     }
+
+ 
+
+
 
 
 
@@ -35,8 +39,20 @@ function ButtonList({stock}){
     function agregarAlCarrito(){
         cantidadCarrito=cantidadCarrito+cantidadCompra
         setCantidadCarrito(cantidadCarrito)
+        notify()
         return cantidadCarrito
     }
+
+    function notify(){
+        const MySwal = withReactContent(Swal)
+
+        MySwal.fire({
+            title: <strong>carrito actualizado con exito!</strong>,
+            html: <i>Se agregaron {cantidadCompra} productos al carrito </i>,
+            icon: 'success'
+          })
+    }
+
 
    
     return(

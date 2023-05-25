@@ -1,5 +1,5 @@
 import './NavBar.css'
-import logo from '../images/logo.png';
+import logo from '../images/Logo.png';
 import CartWidget from '../CartWidget/CartWidget';
 import CartWidgetMenu from '../CartWidget/CartWidgetMenu';
 import { Link } from 'react-router-dom';
@@ -31,10 +31,7 @@ function Navbar({cantidadCarrito}){
                                 </ul>
                             </li>
                             <li className="nav-item nav_links">
-                                <Link className="nav-link" to="/">Quienes somos</Link>
-                            </li>
-                            <li className="nav-item nav_links">
-                            <Link className="nav-link" to="/">Contacto</Link>
+                                <a className="nav-link" href="#footer">Contacto</a>
                             </li>
                         </ul>
                         
@@ -84,10 +81,7 @@ function Navbar({cantidadCarrito}){
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Quienes somos</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Contacto</Link>
+                                <a className="nav-link" href="#footer">Contacto</a>
                             </li>
                         </ul>
                     </div>

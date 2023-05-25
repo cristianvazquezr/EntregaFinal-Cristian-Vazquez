@@ -1,6 +1,7 @@
 import ButtonList from "./buttonList"
 import { Link } from "react-router-dom"
 
+
 function CardItem({nombre,cantidad,imagen,precio,id}){
     return(
         <>

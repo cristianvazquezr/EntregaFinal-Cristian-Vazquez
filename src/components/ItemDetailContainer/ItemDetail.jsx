@@ -2,6 +2,7 @@ import ButtonList from "../itemListContainer/buttonList"
 import "./ItemDetail.css"
 
 
+
 function ItemDetail({nombre,categoria,origen,descripcion,cantidad,imagen,precio}){
     return(
         <>  

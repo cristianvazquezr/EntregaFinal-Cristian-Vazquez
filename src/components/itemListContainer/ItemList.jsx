@@ -1,5 +1,6 @@
 import CardItem from "./cardItem"
 
+
 function ItemList({productos}){
     return(
         <>
