@@ -1,5 +1,5 @@
 import './ShoppingCart.css' 
-import Delete from '../icons/DDelete'
+import Delete from '../icons/Delete'
 import { useContext } from 'react'
 import { cardContextP } from '../Context/CartContext'
 import { Link } from 'react-router-dom'
