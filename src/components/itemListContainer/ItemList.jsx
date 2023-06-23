@@ -13,6 +13,7 @@ function ItemList({productos}){
                     cantidad={items.cantidad}
                     imagen={items.imagen}
                     precio={items.precio}
+                    producto={items}
                 />))
             }
         </>

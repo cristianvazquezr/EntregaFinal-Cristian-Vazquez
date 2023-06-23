@@ -3,11 +3,15 @@ import logo from '../images/Logo.png';
 import CartWidget from '../CartWidget/CartWidget';
 import CartWidgetMenu from '../CartWidget/CartWidgetMenu';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import {cardContextP} from '../Context/CartContext';
 
 
 
-function Navbar({cantidadCarrito}){
 
+function Navbar(){
+
+    let {amountCart}=useContext(cardContextP)
     return(
         <header className="container">
             {/* <!--Cuando la pantalla es mayor a 920px uso menu desplegado--> */}
@@ -35,7 +39,7 @@ function Navbar({cantidadCarrito}){
                             </li>
                         </ul>
                         
-                        <CartWidget className_Cart="cartWidget" className='links_iconos' valorCarrito={cantidadCarrito}></CartWidget>
+                        <CartWidget className_Cart="cartWidget" className='links_iconos' valorCarrito={amountCart}></CartWidget>
                     </nav>
                     <hr />
                 </div>    
@@ -56,7 +60,7 @@ function Navbar({cantidadCarrito}){
                             <Link to="#"><img className="logo-MH" src={logo} alt="Logo del mejor lugar de comidas"/></Link>
                         </div>
                         <div className='CardWidget-MH'>
-                            <CartWidgetMenu className_Cart="cartWidget" className='links_iconos' valorCarrito={cantidadCarrito}></CartWidgetMenu>
+                            <CartWidgetMenu className_Cart="cartWidget" className='links_iconos' valorCarrito={amountCart}></CartWidgetMenu>
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                     </div>

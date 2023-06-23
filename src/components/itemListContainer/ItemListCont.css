@@ -1,5 +1,6 @@
 .itemListCont{
     display: flex;
+    justify-content: space-around;
 
 }
 .imagenProd{
@@ -25,4 +26,52 @@
 .hover-zoom:hover {
     transform: scale(1.07);
     z-index: 100; 
+}
+.filtro{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.filtro input{
+    color: rgb(161, 161, 161);
+}
+
+.categoriaVacia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vh;
+}
+.imgVacia{
+    width: 30vw;
+}
+.card-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: rgb(71, 71, 71);
+    text-align: center;
+}
+.card-price{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: larger;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.buttonList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputCant{
+    text-align: center;
 }

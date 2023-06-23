@@ -16,7 +16,7 @@ function CartWidget(props){
                 </ul>
             </div>
             <Link to="/"><User/></Link>
-            <Link className={props.className_Cart} to="/"><Cart/>
+            <Link className={props.className_Cart} to="cart"><Cart/>
                 <span className="carritoVentas badge rounded-pill bg-danger">
                     {props.valorCarrito}
                 </span>

@@ -7,3 +7,14 @@
     max-width: 700px;
     align-content: center;
 }
+
+.idNotfound{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+
+.imgNotFound{
+    width: 30vw;
+}

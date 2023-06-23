@@ -3,7 +3,9 @@ import "./ItemDetail.css"
 
 
 
-function ItemDetail({nombre,categoria,origen,descripcion,cantidad,imagen,precio}){
+function ItemDetail({nombre,categoria,origen,descripcion,cantidad,imagen,precio,producto}){
+
+
     return(
         <>  
             <div className="card mb-3 cardDetail">
@@ -18,7 +20,7 @@ function ItemDetail({nombre,categoria,origen,descripcion,cantidad,imagen,precio}
                             <p className="card-text">ORIGEN: {origen}</p>
                             <p className="card-text">{descripcion}</p>
                             <p className="card-text"><small className="text-muted">Stock disponible {cantidad}!</small></p>
-                            <ButtonList stock={cantidad}></ButtonList>
+                            <ButtonList stock={cantidad} item={producto}></ButtonList>
                         </div>
                     </div>
                 </div>

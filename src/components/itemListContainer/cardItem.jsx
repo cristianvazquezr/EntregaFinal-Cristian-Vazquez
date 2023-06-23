@@ -2,7 +2,11 @@ import ButtonList from "./buttonList"
 import { Link } from "react-router-dom"
 
 
-function CardItem({nombre,cantidad,imagen,precio,id}){
+
+
+function CardItem({nombre,cantidad,imagen,precio,id,producto}){
+
+
     return(
         <>
         <div className="col-lg-3 col-md-4 col-sm-6 tarjetas" >
@@ -11,8 +15,9 @@ function CardItem({nombre,cantidad,imagen,precio,id}){
                         <img src={imagen} className="card-img-top imagenProd" alt="..."/>
                     </Link>
                     <div className="card-body">
-                        <h5 className="card-title">{nombre} ${precio}</h5>
-                        <ButtonList stock={cantidad}></ButtonList>
+                        <h5 className="card-title">{nombre}</h5>
+                        <h5 className="card-price">${precio}</h5>
+                        <ButtonList stock={cantidad} item={producto}></ButtonList>
                     </div>
                     <div className="card-footer">
                         <small className="text-muted">Quedan solo {cantidad} unidades!</small>

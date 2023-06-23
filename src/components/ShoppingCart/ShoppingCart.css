@@ -1,0 +1,132 @@
+.shoppingCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imagenSC{
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+}
+
+
+.descripcionSC{
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppingCart-article{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nombreSC{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.descripcionSC {
+    font-size: medium;
+    font-weight: 50;
+    color: gray;
+    margin-left: 2vw;
+}
+.precioSC{
+    font-size: x-large;
+    font-weight: 400;
+    text-align: right;
+}
+
+.inputCant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputCant h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 200;
+}
+
+.inputSC{
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    height: 50%;
+}
+.btnSubAdd{
+    height: 25%;
+}
+
+.contenedorSC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.contenedorSCVacio{
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 70vw;
+    border-color: rgba(194, 194, 194, 0.454);
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.contenedorSCVacio button{
+    margin: 10px;
+}
+
+
+.contenedorSCVacio h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 400;
+   
+
+}
+
+.totalCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:50%;
+    flex-wrap: wrap;
+}
+.totalCart h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.btnFin{
+    margin: 10px;
+}
+.cantidadInput{
+    text-align: center;
+}
+.enlaceSC{
+    text-decoration:none;
+}
+
+.formularioCompra{
+    display:flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 2vh;
+}
+.contenedorForm{
+    border-radius: 2%;
+    border: solid 1px grey;
+    width: 50vw;
+    margin-top: 2vh;
+}

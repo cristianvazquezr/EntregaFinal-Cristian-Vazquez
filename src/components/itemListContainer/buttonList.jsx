@@ -1,10 +1,16 @@
 import { useState } from "react"
+import { useContext } from "react"
+import { cardContextP } from "../Context/CartContext"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
-function ButtonList({stock}){
+
+
+
+function ButtonList({stock,item}){
 
     let [cantidadCompra, setCantidadCompra]=useState(1)
+    let [cantidadCarrito, setCantidadCarrito]=useState(0)
 
     function aumentarCantidad(){
         if (cantidadCompra>={stock}.stock){
@@ -27,19 +33,15 @@ function ButtonList({stock}){
         }
 
     }
-
- 
-
-
-
-
-
-    let [cantidadCarrito, setCantidadCarrito]=useState(0)
+    
+    let {addItem} = useContext(cardContextP)
+    
 
     function agregarAlCarrito(){
         cantidadCarrito=cantidadCarrito+cantidadCompra
         setCantidadCarrito(cantidadCarrito)
         notify()
+        addItem({item}.item, cantidadCompra)
         return cantidadCarrito
     }
 
@@ -53,18 +55,16 @@ function ButtonList({stock}){
           })
     }
 
-
-   
     return(
         <>
         <div className='buttonList'>
         
             <div className="input-group mb-3">
                 <button onClick={disminuirCantidad} className="btn btn-outline-secondary" type="button" id="button-addon1">-</button>
-                <input type="number" className="form-control" placeholder="Cantidad" aria-label="Recipient's username" aria-describedby="button-addon2" value={cantidadCompra} readOnly/>
+                <input type="number" className="form-control inputCant" placeholder="Cantidad" aria-label="Recipient's username" aria-describedby="button-addon2" value={cantidadCompra} readOnly/>
                 <button onClick={aumentarCantidad} className="btn btn-outline-secondary" type="button" id="button-addon2">+</button>
             </div>
-            <button className="btn btn-outline-secondary botonCarrito" type="button" id={cantidadCarrito} onClick={agregarAlCarrito}>Agregar al carrito</button>
+            <button className="btn btn-outline-secondary botonCarrito" type="button" id='' onClick={agregarAlCarrito}>Agregar al carrito</button>
         </div>
         </>
     )
