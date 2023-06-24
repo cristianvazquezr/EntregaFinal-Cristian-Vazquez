@@ -4,7 +4,7 @@ import Search from '../icons/Serach';
 import { Link } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
 import { cardContextP } from '../Context/CartContext';
-import './ccartWidget.css'
+import './cartWidget.css'
 
 function CartWidget({valorCarrito, className,className_Cart}){
 
