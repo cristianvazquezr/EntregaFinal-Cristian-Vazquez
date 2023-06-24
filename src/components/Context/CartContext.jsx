@@ -18,7 +18,7 @@ function CartContext({children}){
         let agregarObjeto=true
         let newCart=cart.map((obj)=>{
             if (item.id==obj.id){
-                if (item.cantidad>=obj.CantidadCompra+cant){
+                if (item.cantidad>obj.CantidadCompra+cant){
                     obj.CantidadCompra=obj.CantidadCompra+cant
                     agregarObjeto=false
                     return obj

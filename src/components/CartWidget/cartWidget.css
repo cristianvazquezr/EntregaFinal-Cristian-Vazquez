@@ -1,0 +1,9 @@
+.loginUsu{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+.loginUsu span{
+    font-size: small;
+}

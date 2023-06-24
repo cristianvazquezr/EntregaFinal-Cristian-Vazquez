@@ -70,8 +70,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .inputCant{
     text-align: center;
+}
+.buttonListSS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+    justify-content: space-around;
+    border: solid rgb(200, 200, 200) .5px;
+    border-radius: 10%;
+    text-decoration: rgb(177, 177, 177);
+}
+
+.buttonListSS p{
+    text-align: center;
+    color: rgb(177, 177, 177);
+}
+
+.buttonListSS h5{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }

@@ -55,6 +55,8 @@ function ButtonList({stock,item}){
           })
     }
 
+    if ({stock}.stock!=0){
+
     return(
         <>
         <div className='buttonList'>
@@ -67,7 +69,18 @@ function ButtonList({stock,item}){
             <button className="btn btn-outline-secondary botonCarrito" type="button" id='' onClick={agregarAlCarrito}>Agregar al carrito</button>
         </div>
         </>
-    )
+    )}
+    else{
+        return(
+            <>
+            <div className='buttonListSS'>
+                <h5>AGOTADO</h5>
+                <p>¡Pero no te procupes, pronto habrá más!</p>
+            </div>
+            </>
+        )
+
+    }
 }
 
 export default ButtonList
