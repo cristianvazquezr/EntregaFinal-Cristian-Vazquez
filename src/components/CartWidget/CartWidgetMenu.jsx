@@ -3,6 +3,7 @@ import Cart from '../icons/Cart';
 import User from '../icons/User';
 import { Link } from 'react-router-dom';
 import { cardContextP } from '../Context/CartContext';
+import './cartWidget.css'
 
 
 function CartWidgetMenu({className,className_Cart,valorCarrito}){
